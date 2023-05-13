@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+    <title>Registro - Hospital lizardo </title>
+    <link rel='stylesheet' type='text/css' media='screen' href='estilos.css'>
+    <script src="main.js" defer></script>
+   
+</head>
+<body>
+
+    <form action="#" class="formulario">
+    
+        <h1 class="text-center">Registro de Paciente </h1>
+
+        <div class="barraProgreso">
+            <div class="progreso" id="progreso"></div>
+            <div class="paso pasoUno" data-title="Datos Personales"></div>
+            <div class="paso" data-title="Familiares"></div>
+            <div class="paso" data-title="Condiciones Pre-existentes"></div>
+            <div class="paso" data-title="Internamientos"></div>
+            </div>
+
+        <div class="caja cajaUno">
+        <h3>Datos Personales</h3>
+        <div class="input-group">
+            <label for="nombre">Nombre(s)</label>
+            <input type="text" name="nombre" required id="nombre" required>
+        </div>
+        <div class="input-group">
+            <label for="apellido">Apellido(s)</label>
+            <input type="text" name="apellido" id="apellido" required>
+        </div>
+        <div class="input-group">
+            <label for="Cedula">Cedula</label>
+            <input type="text" name="Cedula" id="Cedula" required>
+        </div>
+        <div class="input-group">
+            <label for="fechaNac">Fecha de Nacimiento</label>
+            <input type="date" name="fechaNac" id="fechaNac" required>
+        </div>
+
+        <div class="input-group">
+            <label for="direccion">Direccion</label>
+            <input type="text" name="direccion" id="direccion" required>
+        </div>
+        <div class="input-group">
+            <label for="telefono">Telefono</label>
+            <input type="text" name="telefono" id="telefono" required>
+        </div>
+        <div class="">
+            <a href="#" class="boton boton_siguiente with-50 ml-auto" >Siguiente</a>
+        </div>
+    </div>
+
+  
+    <div class="caja" >
+        <h3>Familiares </h3>
+        <div class="input-group">
+            <label for="nombre2">Nombre(s)</label>
+            <input type="text" name="nombre2" id="nombre2" required>
+        </div>
+        <div class="input-group">
+            <label for="apellido2">Apellido(s)</label>
+            <input type="text" name="apellido2" id="apellido2" required>
+        </div>
+        <div class="input-group">
+            <label for="parentesco">Parentesco</label>
+            <input type="text" name="parentesco" id="parentesco" required>
+        </div>
+        <div class="input-group">
+            <label for="edad">Edad</label>
+            <input type="text" name="edad" id="edad" required>
+        </div>
+
+        <div class="botones">
+            <a href="#" class="boton boton_atras">Atras</a>
+            <a href="#" class="boton boton_siguiente">Siguiente</a>
+        </div>
+    </div>
+
+    <div class="caja" >
+        <h3>Condiciones Pre-existentes de Salud </h3>
+        <div class="input-group">
+            <label for="condicionSalud">Condicion de Salud</label>
+            <input type="text" name="condicionSalud" id="condicionSalud" required>
+        </div>
+        <div class="input-group">
+            <label for="tiempoCondicion">Tiempo con la condicion</label>
+            <input type="text" name="tiempoCondicion" id="tiempoCondicion" required>
+        </div>
+        
+        <div class="botones">
+            <a href="#" class="boton boton_atras">Atras</a>
+            <a href="#" class="boton boton_siguiente">Siguiente</a>
+        </div>
+    </div>
+
+    <div class="caja" >
+        <h3>Internamientos Realizados</h3>
+        <div class="input-group">
+            <label for="fecha">Fecha</label>
+            <input type="date" name="fecha" id="fecha" required>
+        </div>
+        <div class="input-group">
+            <label for="centroMedico">Centro Medico</label>
+            <input type="text" name="centroMedico" id="centroMedico" required>
+        </div>
+        <div class="input-group">
+            <label for="diagnostico">Diagnostico</label>
+            <input type="text" name="diagnostico" id="diagnostico" required>
+        </div>
+        
+        <div class="botones">
+            <a href="#" class="boton boton_atras">Atras</a>
+            <a href="check.gif" class="boton boton_enviar">Enviar</a>
+                           
+</form>
+
+
+</body>
+</html>

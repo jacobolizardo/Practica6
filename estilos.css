@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    display: grid;
+    place-items: center;
+    background-color: #c2ec8b;
+}
+
+
+label{
+    display: block;
+    margin-bottom: 8px;
+}
+
+
+input{
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 4px;
+}
+
+.text-center{
+    text-align: center;
+    color: #2c5038;
+
+}
+
+.with-50{
+    width: 50%;
+}
+
+.ml-auto{
+    margin-left: auto;
+}
+
+.barraProgreso{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 32px 0 64px 0;
+}
+
+.barraProgreso::before, .progreso{
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 4px;
+    width: 100%;
+    background-color: rgb(211, 211, 211);
+    counter-reset: step;
+}
+
+.progreso{
+    background-color: #da1212;
+    width: 0%;
+    transition: 0.3s ease-in-out;
+}
+
+.paso{
+    width: 35px;
+    height: 35px;
+    background-color: rgb(211, 211, 211);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+
+.paso::before{
+    counter-increment: step;
+    content: counter(step);
+}
+
+
+.paso::after{
+    
+    content: attr(data-title);
+    position: absolute;
+    top: calc(100% + 8px);
+    font-size: 12px;
+    color: rgb(128, 128, 128);
+}
+
+.pasoUno{
+    background-color: #12da5f;
+    color: yellow;
+}
+
+
+.form{
+    width: clamp(352px, 333%, 474px);
+    margin:0 auto;
+    border: 1px solid yellow;
+    border-radius: 6px;
+    padding: 24px;
+    background-color: rgb(193, 234, 177);
+    
+}
+
+.caja{
+    display: none;
+}
+
+.cajaUno{
+    display:block
+    
+}
+
+.input-group {
+    margin: 32px 0;
+}
+
+.botones{
+    display: grid;
+    grid-template-columns: repeat(2, 225px);
+    gap: 24px;
+}
+
+.boton{
+    padding: 12px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background-color: #12da23;
+    color: black;
+    border-radius: 4px;
+    cursor: pointer;
+    font-style: bold;
+    transition: all 250ms ease-in-out;
+
+}
+
+.boton:hover{
+    box-shadow: 0 0 0 2px yellow, 0 0 0 3px;
+
+}
+
+.boton:active{
+    transform: scale(0.98);
+}
+
+.boton_enviar {
+
+    background-color: #4bda12;
+    
+}
